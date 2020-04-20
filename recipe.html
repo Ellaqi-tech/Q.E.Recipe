@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q.E.Recipe</title>
+        <link type="text/css" rel="stylesheet" href="style/recipe.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <!-- set header block to make bgm icon and weather icon more presenatble -->
+            <!-- one layer for while background -->
+            <div class="headerblock"></div>
+            <!-- this layer for displaying background img, so that these 2 layers can present exactly same opcity of the bg image on the header part -->
+            <div class="headerblock1"></div>
+            
+            <div class="bgm">
+                <div class="music">
+                    <img class="musicicon" src="img/soundnobg.gif" alt="music icon">
+                    <div class="musicintro">
+                    GET YOUR <span id="descmusic"></span> COOKING BGM
+                    </div>
+                </div>
+                <div id="playlist">
+                
+                </div>
+            </div>
+
+            <div class="logo">
+                <h1>Q.E.RECIPE</h1>
+            </div>
+            
+            <div class="inputbar">
+                <input id="search" class="searchinput" placeholder="Input the ingridents here">
+                <div class="startbtn" id="startbtn">
+                    <button class="btn" onclick="getrecipe(document.getElementById('search').value)">Go</button>
+                    <!-- waiting to improve: use "+" icon to add ingredients -->
+                </div>
+            </div>
+            
+            <!-- output recipe -->
+            <div id="output" class="output">
+                
+                <div id="title" class="title op">
+                </div>
+                
+                <div id="readymin" class="readymin op">
+                </div>
+                
+                <div id="recipeimg" class="recipeimg op">
+                </div>
+                
+                <div id="reciperesult" class="reciperesult op">
+                </div>
+                
+                <div id="exingredients" class="exingredients op">
+                </div>
+                
+                <div id="summary" class="summary op">
+                </div>
+                
+                <div id="diets" class="diets op">
+                </div>      
+                
+                <div id="instructions" class="instructions op">
+                </div> 
+                
+                <div id="steps" class="steps op">
+                </div> 
+                
+            </div>
+            
+            <div class="weather" id="weather">
+                <p class="weathertext">
+                    <marquee behavior="scroll" direction="left" scrollamount="5">
+                        TODAY'S WEATHER : 
+                        <span id="locat"></span>
+                        <span id="desc" style="text-transform: capitalize"></span>
+                        <span id="temp"></span>
+                    </marquee>
+                </p>
+            </div>
+            
+            <div id="guidetext">
+                What's in your frige?    
+            </div>
+        </div>
+        <script type="text/javascript" src="weather.js"></script> 
+        <script type="text/javascript" src="recipe.js"></script> 
+        <script type="text/javascript" src="music.js"></script>
+    </body>
+</html>
+
+<!-- need to improve: 
+    1. the style of showing recipes, should have more readable visual effect 
+    2. could add switch recipe using ajax
+    3. responsive design
+-->

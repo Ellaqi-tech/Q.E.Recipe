@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q.E.Recipe</title>
+        <link type="text/css" rel="stylesheet" href="style/index.css">
+    </head>
+    <body>
+        <!-- video bg -->
+        <div class="fullscreen-video-wrap">
+            <video id="video" src="img/production%20ID_3992461.mp4" autoplay="true" loop="true" muted></video>
+            <script>
+                document.getElementById('video').play();
+            </script>
+        </div>
+            
+        <div class="main-container">
+            
+            <div class="music">
+                <img class="musicicon" src="img/soundnobg.gif" alt="music icon">
+                <div class="musicintro">
+                    GET YOUR <span class="desc"></span> COOKING BGM
+                </div>
+            </div>
+            
+            <div class="left-text">
+                <h1>Q.E.RECIPE</h1>
+                <p>Get today's recipe<br> for the ingredients<br> waiting in your fridge.</p>
+                <P>And don't forget the most secret ingredient - <span class="love">love</span></P>
+            </div>
+            
+            <div class="startbtn">
+                <a href="recipe.html">Get Today's Recipe</a>
+            </div>
+            
+            <div class="weather">
+                <p class="weathertext">
+                    <marquee behavior="slide" direction="up" scrollamount="13">
+                        <span id="desc"></span>
+                        <span id="temp"></span><br>
+                        CURRENT WEATHER : 
+                        <span id="locat"></span>
+                    </marquee>
+                </p>
+            </div>      
+        </div>
+        <script type="text/javascript" src="weather.js"></script> 
+    </body>
+
+</html>
