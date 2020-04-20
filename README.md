@@ -3,7 +3,7 @@
  ### 2. Play users’ cooking background music based on the local weather(use SpotifyAPI to provide a switchable playlist).
 # API list:
  ### Spoonacular API
- ### Openeathermap API
+ ### Openweathermap API
  ### Soundcloud API 
  ### Draft wireframe
      # index page
