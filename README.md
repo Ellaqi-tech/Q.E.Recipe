@@ -5,6 +5,6 @@
  ### Spoonacular API
  ### Openweathermap API
  ### Soundcloud API 
- ### Draft wireframe
-     # index page
-![index page](APIwireframe0.png)
+ ### Draft demo
+![index page](img/indexdemo.png)
+![recipe page](img/recipedemo.png)
