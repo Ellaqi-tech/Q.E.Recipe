@@ -6,5 +6,5 @@
  ### Openweathermap API
  ### Soundcloud API 
  ### Draft demo
-![index page](img/indexdemo.png)
-![recipe page](img/recipedemo.png)
+![index page](img/indexdemo1.0.png)
+![recipe page](img/recipedemo1.0.png)
