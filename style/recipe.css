@@ -10,14 +10,12 @@ body {
     font-weight: bold;
     overflow-x: hidden;
 }
-
 a {
     text-decoration: inherit;
     color: inherit;
 }
 .main-container {
     width: 100%;
-/*    height: 1400px;*/
     z-index: 1;
 }
 .main-container::after {
@@ -37,7 +35,7 @@ a {
     background: white;
     top: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
     margin: 0;
     padding: 0;
     z-index: -1;   
@@ -48,7 +46,7 @@ a {
     background-size: cover;
     top: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
     margin: 0;
     padding: 0;
     opacity: 0.6;
@@ -56,7 +54,7 @@ a {
 }
 .bgm {
     width: 26%;
-    height: 880px;
+    height: 800px;
     position: fixed;
     display: inline-block;
     z-index: 1;
@@ -64,7 +62,7 @@ a {
 .music {
     position: fixed;
     top: 3vw;
-    left: 3vw;
+    left: 5%;
     text-align: center;
 }
 .musicicon {
@@ -73,23 +71,26 @@ a {
 .musicintro {
     padding-top: 0.2vw;
     font-size: 1.2em;
+    text-align: center;
+}
+#descmusic {
+    text-transform: uppercase;
 }
 #playlist {
-/*    width: 80%;*/
-/*    height: 500px;*/
-    margin-top: 1vw;
+    margin-top: 0.2vw;
     margin-left: 2vw;
-    padding: 10vw 2vw;
+    padding: 8vw 2vw;
     position: relative;
 }
 #playlist::after {
     position: absolute;
     content: "";
     background: black;
-    background-size: cover;   opacity: 0.5;
+    background-size: cover;   
+    opacity: 0.5;
     top: 7vw;
     left: 0;
-    bottom: 0;
+    bottom: 7vw;
     right: 0;
     z-index: -1;
 }
@@ -99,10 +100,13 @@ a {
     line-height: 1.3em;
     color: whitesmoke;
 }
-
+.song {
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid gray;
+    margin: 1em 0;
+}
 .logo {
     width: 10em;
-/*    margin: 2vw auto;*/
     text-align: center;
     z-index: 2;
     position: fixed;
@@ -110,25 +114,23 @@ a {
     left: 44%;
 }
 .weather {
-    width: 20%;
+    width: 25%;
     position: fixed;
     top: 3vw;
-    right: 3vw;
+    right: 5vw;
     text-align: center;
     font-size: 1.2em;
 }
-
 .inputbar {
     position: fixed;
     top: 7.5vw;
     left: 32%;
     width: 35%;
-/*    margin: 3vw auto;*/
     position: relative;
     z-index: 1;
 }
 .searchinput {
-    width: 100%;
+    width: 38%;
     height: 3.6vw;
     display: inline-block;
     border: none;
@@ -137,17 +139,19 @@ a {
     padding-left: 1vw;
     font-family: 'Poiret One', cursive;
     z-index: 1;
+    position: fixed;
 }
 .startbtn {
     display: inline-block;
 }
 .btn {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 7.5vw;
+    right: 30%;
     bottom: 0;
-    padding-left: 1vw;
-    padding: 0.4vw 1.2vw;
+    width: 4vw;
+    height: 3.5vw;
+    line-height: 1.7vw;
     border: none;
     border-left: 1px solid lightgray;
     text-align: center;
@@ -157,32 +161,86 @@ a {
     font-weight: bold;
     z-index: 1;
 }
-
 .btn:hover {
     color: #f5728f;
     border: none;
     border-left: 1px solid lightgray;
     background-color: rgba(255, 255, 255, 0.8);
 }
-.output {
+#output {
     position: relative;
     width: 70%;
     margin-left: 28vw;
-    padding: 2vw;
+    padding: 3.5vw;
+    margin-top: 5vw;
     padding-bottom: 2vw;
     font-size: 1.2em;
     z-index: -2;
     font-family: 'Manrope', sans-serif;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    color: #5e6472;
+    display: none;
+}
+.output::after {
+    position: absolute;
+    content: "";
+    background: white;
+    background-size: cover;   opacity: 0.5;
+    top: 7vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.content {
+    padding: 0.1em 2em;
+    line-height: 1.5em;
+}
+h3 {
+    text-shadow: 2px 2px 4px #5e6472;
+    padding-bottom: 0;
+    color: #ffffff;
+    padding-left: 1em;
+    font-family: 'Poiret One', cursive;
+    margin: 0.5em;
+    line-height: 1em;
+    font-size: 1.5em;
 }
 .title {
-    font-size: 1.6em;
     font-weight: bold;
+    text-align: center;
+    color: #293241;
+	text-shadow: 0px -1px 4px gray;
 }
-#reciperesult img {
-    width: 100px;
+#title {
+    font-size: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.1em;
+    font-family: 'Poiret One', cursive;
+}
+#recipeimg {
+    text-align: center;
+}
+.receipeimg {
+    width: 500px;
 }
 .op {
-    padding-top: 1.1vw;
+    padding-top: 0.6vw;
+}
+.readymin {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+.source {
+    font-size: 0.8em;
+    color: cornflowerblue;
+    text-shadow: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 #guidetext {
     position: absolute;

@@ -14,20 +14,20 @@
                 document.getElementById('video').play();
             </script>
         </div>
-            
+        <!-- overlay bg -->
+        <div class="overlay"></div>    
+        
         <div class="main-container">
-            
             <div class="music">
                 <img class="musicicon" src="img/soundnobg.gif" alt="music icon">
-                <div class="musicintro">
-                    GET YOUR <span id="descmusic"></span> COOKING BGM
+                <div class="musicintro texteffect">
+                    GET YOUR <span class="desc"></span> COOKING BGM
                 </div>
-            </div>
-            
+            </div>  
             <div class="left-text">
-                <h1>Q.E.RECIPE</h1>
-                <p>Get today's recipe<br> for the ingredients<br> waiting in your fridge.</p>
-                <P>And don't forget the most secret ingredient - <span class="love">love</span></P>
+                <h1 class="texteffect">Q.E.RECIPE</h1>
+                <p>Get today's recipe for the ingredients waiting in your fridge.<br/>
+                And don't forget the most secret ingredient - <span class="love">love</span></p>
             </div>
             
             <div class="startbtn">
@@ -35,8 +35,8 @@
             </div>
             
             <div class="weather">
-                <p class="weathertext">
-                    <marquee behavior="slide" direction="up" scrollamount="13">
+                <p class="weathertext texteffect">
+                    <marquee behavior="slide" direction="up" scrollamount="20">
                         <span id="desc"></span>
                         <span id="temp"></span><br>
                         CURRENT WEATHER : 
@@ -45,7 +45,6 @@
                 </p>
             </div>      
         </div>
-        <script type="text/javascript" src="weather.js"></script> 
+        <script type="text/javascript" src="script/weathermusic.js"></script> 
     </body>
-
 </html>
