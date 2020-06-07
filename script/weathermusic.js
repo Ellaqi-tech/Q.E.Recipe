@@ -5,7 +5,7 @@ const descmusic = document.getElementById("descmusic");
 const playlist = document.getElementById("playlist");
 
 function weathermusic() {
-   fetch('http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=d9667696d04e9bafdbcee92e9bd52d40&units=metric')
+   fetch('https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=d9667696d04e9bafdbcee92e9bd52d40&units=metric')
     .then(response => response.json())
     .then(data => {
         let locatName = data['name'];
@@ -47,5 +47,5 @@ weathermusic();
 /* next step: 
     1. multiple input
     2. error page
-    3. make the audio player work
+    3. make the player work
 */
