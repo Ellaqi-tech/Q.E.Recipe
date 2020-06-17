@@ -26,7 +26,7 @@ function weathermusic() {
         fetch('https://api.soundcloud.com/tracks/?client_id=86b6a66bb2d863f5d64dd8a91cd8de94&q=' + descValue)
             .then(response => response.json())
             .then(data => {
-                for(let i=0; i<10; i++) {
+                for(let i=0; i<15; i++) {
                     let title = data[i].title;
                     console.log(title);
                     let permalinkurl = data[i].permalink_url;
