@@ -1,6 +1,6 @@
 function getsource(id){
     $.ajax({
-        url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=39b0a9d497204e868d081eb4095b4875",
+        url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey",
         success:function(res) {
             document.getElementById("readymin").innerHTML=" 🕒 Ready in "+res.readyInMinutes + " minutes";
             document.getElementById("reciperesult").innerHTML=
@@ -26,7 +26,7 @@ function getsource(id){
 }
 function getrecipe(q){
     $.ajax({
-        url:"https://api.spoonacular.com/recipes/findByIngredients?ingredients="+q +"&number=1&apiKey=39b0a9d497204e868d081eb4095b4875",
+        url:"https://api.spoonacular.com/recipes/findByIngredients?ingredients="+q +"&number=1&apiKey",
         success:function(res){
             document.getElementById("output").style.display = "block";
             document.getElementById("title").innerHTML=res[0].title;
